@@ -26,6 +26,12 @@ export { buildNvidiaProvider } from "./nvidia.js";
 export { buildOpenAICodexProvider } from "./openai.js";
 export { buildOpenrouterProvider } from "./openrouter.js";
 export { QIANFAN_BASE_URL, QIANFAN_DEFAULT_MODEL_ID, buildQianfanProvider } from "./qianfan.js";
+export {
+  QWEN_PORTAL_BASE_URL,
+  QWEN_PORTAL_DEFAULT_MODEL_ID,
+  QWEN_PORTAL_DEFAULT_MODEL_REF,
+  buildQwenPortalProvider,
+} from "../../extensions/qwen-portal/provider-catalog.js";
 export { buildSyntheticProvider } from "./synthetic.js";
 export { buildTogetherProvider } from "./together.js";
 export { buildVeniceProvider } from "./venice.js";

@@ -8,14 +8,13 @@ const EMPTY_STORE: AuthProfileStore = {
 };
 
 describe("formatAuthDoctorHint", () => {
-  it("guides removed qwen portal users to model studio onboarding", async () => {
+  it("does not treat qwen-portal as a removed integration", async () => {
     const hint = await formatAuthDoctorHint({
       store: EMPTY_STORE,
       provider: "qwen-portal",
     });
 
-    expect(hint).toContain("openclaw onboard --auth-choice modelstudio-api-key");
-    expect(hint).toContain("modelstudio-api-key-cn");
-    expect(hint).not.toContain("--provider modelstudio");
+    expect(hint).not.toContain("deprecated");
+    expect(hint).not.toContain("migrate to Model Studio");
   });
 });

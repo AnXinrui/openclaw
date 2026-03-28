@@ -1,0 +1,21 @@
+{
+  "id": "qwen-portal",
+  "providers": ["qwen-portal"],
+  "providerAuthChoices": [
+    {
+      "provider": "qwen-portal",
+      "method": "oauth",
+      "choiceId": "qwen-portal-oauth",
+      "choiceLabel": "Qwen Portal (chat.qwen.ai OAuth)",
+      "choiceHint": "Device sign-in → portal.qwen.ai API",
+      "groupId": "qwen-portal",
+      "groupLabel": "Qwen Portal",
+      "groupHint": "OAuth (unofficial; may break)"
+    }
+  ],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

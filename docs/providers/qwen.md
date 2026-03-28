@@ -10,12 +10,23 @@ title: "Qwen"
 
 <Warning>
 
-**Qwen OAuth has been removed.** The free-tier OAuth integration
-(`qwen-portal`) that used `portal.qwen.ai` endpoints is no longer available.
-See [Issue #49557](https://github.com/openclaw/openclaw/issues/49557) for
-background.
+**Two paths:** [Model Studio](/providers/modelstudio) is the supported
+Alibaba Cloud route (API key). **Qwen Portal OAuth** (`qwen-portal`) is an
+optional bundled integration (device sign-in at `chat.qwen.ai`, inference at
+`portal.qwen.ai`) that may change or stop working without notice. See
+[Issue #49557](https://github.com/openclaw/openclaw/issues/49557) for history.
 
 </Warning>
+
+## Optional: Qwen Portal OAuth
+
+```bash
+openclaw onboard --auth-choice qwen-portal-oauth
+# or
+openclaw models auth login --provider qwen-portal
+```
+
+Default model: `qwen-portal/coder-model`.
 
 ## Recommended: Model Studio (Alibaba Cloud Coding Plan)
 

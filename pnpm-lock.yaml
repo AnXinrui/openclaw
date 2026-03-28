@@ -551,6 +551,8 @@ importers:
 
   extensions/qianfan: {}
 
+  extensions/qwen-portal: {}
+
   extensions/sglang: {}
 
   extensions/signal: {}

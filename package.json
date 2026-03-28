@@ -1270,6 +1270,9 @@
   "engines": {
     "node": ">=22.14.0"
   },
+  "volta": {
+    "node": "22.22.2"
+  },
   "packageManager": "pnpm@10.32.1",
   "pnpm": {
     "minimumReleaseAge": 2880,

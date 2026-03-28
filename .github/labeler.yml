@@ -293,6 +293,10 @@
   - changed-files:
       - any-glob-to-any-file:
           - "extensions/qianfan/**"
+"extensions: qwen-portal":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "extensions/qwen-portal/**"
 "extensions: synthetic":
   - changed-files:
       - any-glob-to-any-file:

@@ -50,6 +50,7 @@ export type BuiltInAuthChoice =
   | "modelstudio-standard-api-key"
   | "modelstudio-api-key-cn"
   | "modelstudio-api-key"
+  | "qwen-portal-oauth"
   | "custom-api-key"
   | "skip";
 export type AuthChoice = BuiltInAuthChoice | (string & {});
@@ -78,6 +79,7 @@ export type BuiltInAuthChoiceGroupId =
   | "huggingface"
   | "qianfan"
   | "modelstudio"
+  | "qwen-portal"
   | "xai"
   | "volcengine"
   | "byteplus"

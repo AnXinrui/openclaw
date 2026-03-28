@@ -11866,6 +11866,41 @@ export const GENERATED_BUNDLED_PLUGIN_METADATA = [
     },
   },
   {
+    dirName: "qwen-portal",
+    idHint: "qwen-portal",
+    source: {
+      source: "./index.ts",
+      built: "index.js",
+    },
+    packageName: "@openclaw/qwen-portal-provider",
+    packageVersion: "2026.3.22",
+    packageDescription: "OpenClaw Qwen Portal (chat.qwen.ai OAuth) provider plugin",
+    packageManifest: {
+      extensions: ["./index.ts"],
+    },
+    manifest: {
+      id: "qwen-portal",
+      configSchema: {
+        type: "object",
+        additionalProperties: false,
+        properties: {},
+      },
+      providers: ["qwen-portal"],
+      providerAuthChoices: [
+        {
+          provider: "qwen-portal",
+          method: "oauth",
+          choiceId: "qwen-portal-oauth",
+          choiceLabel: "Qwen Portal (chat.qwen.ai OAuth)",
+          choiceHint: "Device sign-in → portal.qwen.ai API",
+          groupId: "qwen-portal",
+          groupLabel: "Qwen Portal",
+          groupHint: "OAuth (unofficial; may break)",
+        },
+      ],
+    },
+  },
+  {
     dirName: "sglang",
     idHint: "sglang",
     source: {
